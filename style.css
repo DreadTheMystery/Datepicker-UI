@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.datepicker {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font: bold;
+}
+
+.days-of-week div {
+    width: 14%;
+    text-align: center;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.dates .date {
+    width: 14%;
+    text-align: center;
+    padding: 25px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dates .current {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dates .empty {
+    visibility: hidden;
+    pointer-events: none;
+
+}
